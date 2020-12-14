@@ -1,9 +1,11 @@
 #/bin/sh
 
+# Install docker
+sudo apt-get update
+sudo apt-get install docker
+
 # ref:
 # https://internetofthing.io/post/how-to-setup-raspberry-pi-as-an-azure-devops-agent
-
-sudo apt-get update
 
 # install python 3 (should be 3.7)
 sudo apt-get install python3 --upgrade
