@@ -1,7 +1,15 @@
-#/bin/sh
+#/bin/bash
+
+# Update apt-get
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+# Start SSH server
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
 
 # Install docker
-sudo apt-get update
 sudo apt-get install docker
 
 # ref:
